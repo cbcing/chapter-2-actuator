@@ -1,6 +1,0 @@
-FROM daocloud.io/myzd/gradle-builder:v20170706
-MAINTAINER Baichuan.chen <davvvvvvidchen@gmail.com>
-
-COPY . /srv
-RUN curl -sSL http://git.oschina.net/bestmike007/files/raw/master/setenv.sh | sh -s; \
-    gradle --no-daemon build -x test
