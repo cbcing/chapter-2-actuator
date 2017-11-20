@@ -10,4 +10,4 @@ FROM java:8-jre-alpine
 
 COPY --from=build /tmp/build/libs/cbc-spring-boot-docker-test:0.0.1-SNAPSHOT.jar /
 
-ENTRYPOINT ["java", "-server", "-jar", "/cbc-spring-boot-docker-test:0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-server", "-jar", "/cbc-spring-boot-docker-test-0.0.1-SNAPSHOT.jar"]
